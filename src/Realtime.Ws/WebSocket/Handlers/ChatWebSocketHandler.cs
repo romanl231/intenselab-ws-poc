@@ -6,6 +6,7 @@ using System.Net.WebSockets;
 using System.Text;
 using System.Threading.Tasks;
 using WS.Services;
+using Shared;
 
 namespace WS.Handlers
 {
@@ -24,24 +25,70 @@ namespace WS.Handlers
             _manager.AddSocket(id, socket);
 
             var buffer = new byte[1024 * 4];
-            while (socket.State == WebSocketState.Open)
-            {
-                var result = await socket.ReceiveAsync(new ArraySegment<byte>(buffer), CancellationToken.None);
-                if (result.MessageType == WebSocketMessageType.Close)
-                {
-                    _manager.RemoveSocket(id);
-                    await socket.CloseAsync(WebSocketCloseStatus.NormalClosure, "Closed", CancellationToken.None);
-                }
-                else
-                {
-                    var data = MessagePackSerializer.Deserialize<string>(buffer[..result.Count]);
-                    Console.WriteLine($"Received: {data}");
 
-                    var payload = MessagePackSerializer.Serialize($"Echo: {data}");
-                    foreach (var ws in _manager.GetAll())
+            try
+            {
+                while (socket.State == WebSocketState.Open)
+                {
+                    var result = await socket.ReceiveAsync(new ArraySegment<byte>(buffer), CancellationToken.None);
+                    if (result.MessageType == WebSocketMessageType.Close)
                     {
-                        if (ws.State == WebSocketState.Open)
-                            await ws.SendAsync(payload, WebSocketMessageType.Binary, true, CancellationToken.None);
+                        _manager.RemoveSocket(id);
+                        await socket.CloseAsync(WebSocketCloseStatus.NormalClosure, "Closed", CancellationToken.None);
+                        break;
+                    }
+
+                    var message = MessagePackSerializer.Deserialize<ChatMessage>(buffer[..result.Count]);
+                    await HandleMessageEventAsync(message);
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Socket error: {ex.Message}");
+                _manager.RemoveSocket(id);
+            }
+        }
+
+        private async Task HandleMessageEventAsync(ChatMessage msg)
+        {
+            switch (msg.Event)
+            {
+                case MessageEvent.Message:
+                    Console.WriteLine($"[{msg.Sender}]: {msg.Text}");
+                    await BroadcastAsync(msg);
+                    break;
+
+                case MessageEvent.Join:
+                    Console.WriteLine($"{msg.Sender} joined the chat");
+                    await BroadcastAsync(msg);
+                    break;
+
+                case MessageEvent.Leave:
+                    Console.WriteLine($"{msg.Sender} left the chat");
+                    await BroadcastAsync(msg);
+                    break;
+
+                default:
+                    Console.WriteLine($"Unknown event: {msg.Event}");
+                    break;
+            }
+        }
+
+        private async Task BroadcastAsync(ChatMessage message)
+        {
+            var payload = MessagePackSerializer.Serialize(message);
+
+            foreach (var ws in _manager.GetAll())
+            {
+                if (ws.State == WebSocketState.Open)
+                {
+                    try
+                    {
+                        await ws.SendAsync(payload, WebSocketMessageType.Binary, true, CancellationToken.None);
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"Failed to send message: {ex.Message}");
                     }
                 }
             }
