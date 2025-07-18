@@ -8,18 +8,18 @@ namespace Gateway.Controllers
     [Route("chat")]
     public class ChatMessageController : ControllerBase
     {
-        private readonly WebSocketClientService _wsService;
+        private readonly RedisPublisherService _redis;
 
-        public ChatMessageController(WebSocketClientService wsService) 
+        public ChatMessageController(RedisPublisherService redis) 
         {
-            _wsService = wsService;
+            _redis = redis;
         }
 
         [HttpPost("send")]
         public async Task<IActionResult> Send([FromBody] ChatMessage message)
         {
             message.Event = "send";
-            await _wsService.SendMessageAsync(message);
+            await _redis.PublishAsync(message);
             return Ok();
         }
 
@@ -27,7 +27,7 @@ namespace Gateway.Controllers
         public async Task<IActionResult> Join([FromBody] ChatMessage message)
         {
             message.Event = "join";
-            await _wsService.SendMessageAsync(message);
+            await _redis.PublishAsync(message);
             return Ok();
         }
 
@@ -35,7 +35,7 @@ namespace Gateway.Controllers
         public async Task<IActionResult> Leave([FromBody] ChatMessage message)
         {
             message.Event = "leave";
-            await _wsService.SendMessageAsync(message);
+            await _redis.PublishAsync(message);
             return Ok();
         }
     }

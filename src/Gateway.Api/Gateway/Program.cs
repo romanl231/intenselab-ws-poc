@@ -1,10 +1,14 @@
 using Microsoft.OpenApi.Models;
 using Gateway.Services;
+using StackExchange.Redis;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
-builder.Services.AddSingleton<WebSocketClientService>();
+builder.Services.AddSingleton<IConnectionMultiplexer>(
+    ConnectionMultiplexer.Connect("redis:6379")
+);
+builder.Services.AddSingleton<RedisPublisherService>();
 
 builder.Services.AddCors(options =>
 {

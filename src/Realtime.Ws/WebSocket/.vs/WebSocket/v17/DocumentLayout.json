@@ -11,6 +11,14 @@
       "RelativeMoniker": "D:0:0:{6E58678C-6AA4-402F-BAAA-16E1AD118568}|WebSocket.csproj|solutionrelative:services\\websocketconnectionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{6E58678C-6AA4-402F-BAAA-16E1AD118568}|WebSocket.csproj|d:\\gitrepos\\intenselab-ws-poc\\src\\realtime.ws\\websocket\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E58678C-6AA4-402F-BAAA-16E1AD118568}|WebSocket.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E58678C-6AA4-402F-BAAA-16E1AD118568}|WebSocket.csproj|d:\\gitrepos\\intenselab-ws-poc\\src\\realtime.ws\\websocket\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{6E58678C-6AA4-402F-BAAA-16E1AD118568}|WebSocket.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GitRepos\\intenselab-ws-poc\\src\\Shared\\Shared\\Class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -19,14 +27,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{6E58678C-6AA4-402F-BAAA-16E1AD118568}|WebSocket.csproj|d:\\gitrepos\\intenselab-ws-poc\\src\\realtime.ws\\websocket\\websocket.csproj.backup.tmp||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{6E58678C-6AA4-402F-BAAA-16E1AD118568}|WebSocket.csproj|solutionrelative:websocket.csproj.backup.tmp||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E58678C-6AA4-402F-BAAA-16E1AD118568}|WebSocket.csproj|d:\\gitrepos\\intenselab-ws-poc\\src\\realtime.ws\\websocket\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{6E58678C-6AA4-402F-BAAA-16E1AD118568}|WebSocket.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E58678C-6AA4-402F-BAAA-16E1AD118568}|WebSocket.csproj|d:\\gitrepos\\intenselab-ws-poc\\src\\realtime.ws\\websocket\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E58678C-6AA4-402F-BAAA-16E1AD118568}|WebSocket.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -44,7 +44,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Class1.cs",
               "DocumentMoniker": "D:\\GitRepos\\intenselab-ws-poc\\src\\Shared\\Shared\\Class1.cs",
               "RelativeDocumentMoniker": "..\\..\\Shared\\Shared\\Class1.cs",
@@ -55,7 +55,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "ChatMessage.cs",
               "DocumentMoniker": "D:\\GitRepos\\intenselab-ws-poc\\src\\Shared\\ChatMessage.cs",
               "RelativeDocumentMoniker": "..\\..\\Shared\\ChatMessage.cs",
@@ -67,7 +67,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "Dockerfile",
               "DocumentMoniker": "D:\\GitRepos\\intenselab-ws-poc\\src\\Realtime.Ws\\WebSocket\\Dockerfile",
               "RelativeDocumentMoniker": "Dockerfile",
@@ -75,11 +75,12 @@
               "RelativeToolTip": "Dockerfile",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-07-18T10:52:20.714Z"
+              "WhenOpened": "2025-07-18T10:52:20.714Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "WebSocket.csproj.Backup.tmp",
               "DocumentMoniker": "D:\\GitRepos\\intenselab-ws-poc\\src\\Realtime.Ws\\WebSocket\\WebSocket.csproj.Backup.tmp",
               "RelativeDocumentMoniker": "WebSocket.csproj.Backup.tmp",
@@ -97,7 +98,7 @@
               "RelativeDocumentMoniker": "Handlers\\ChatWebSocketHandler.cs",
               "ToolTip": "D:\\GitRepos\\intenselab-ws-poc\\src\\Realtime.Ws\\WebSocket\\Handlers\\ChatWebSocketHandler.cs",
               "RelativeToolTip": "Handlers\\ChatWebSocketHandler.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAQwDcAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAgwF0AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-18T10:36:31.765Z",
               "EditorCaption": ""
@@ -117,15 +118,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\GitRepos\\intenselab-ws-poc\\src\\Realtime.Ws\\WebSocket\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\GitRepos\\intenselab-ws-poc\\src\\Realtime.Ws\\WebSocket\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T10:22:11.008Z"
+              "WhenOpened": "2025-07-18T10:22:11.008Z",
+              "EditorCaption": ""
             }
           ]
         }
