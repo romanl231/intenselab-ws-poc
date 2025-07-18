@@ -15,6 +15,6 @@ namespace Shared {
 		public string Text {get; set; } = string.Empty;
 
 		[Key(3)]
-		public MessageEvent Event { get; set; }
+		public string Event { get; set; } = string.Empty;
 	}
 }

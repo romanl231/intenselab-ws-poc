@@ -95,9 +95,9 @@
               "Title": "ChatWebSocketHandler.cs",
               "DocumentMoniker": "D:\\GitRepos\\intenselab-ws-poc\\src\\Realtime.Ws\\WebSocket\\Handlers\\ChatWebSocketHandler.cs",
               "RelativeDocumentMoniker": "Handlers\\ChatWebSocketHandler.cs",
-              "ToolTip": "D:\\GitRepos\\intenselab-ws-poc\\src\\Realtime.Ws\\WebSocket\\Handlers\\ChatWebSocketHandler.cs*",
-              "RelativeToolTip": "Handlers\\ChatWebSocketHandler.cs*",
-              "ViewState": "AgIAACoAAAAAAAAAAAAQwD0AAAAAAAAAAAAAAA==",
+              "ToolTip": "D:\\GitRepos\\intenselab-ws-poc\\src\\Realtime.Ws\\WebSocket\\Handlers\\ChatWebSocketHandler.cs",
+              "RelativeToolTip": "Handlers\\ChatWebSocketHandler.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAAC8AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-18T10:36:31.765Z",
               "EditorCaption": ""
@@ -112,8 +112,7 @@
               "RelativeToolTip": "Services\\WebSocketConnectionManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T10:35:55.328Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-18T10:35:55.328Z"
             },
             {
               "$type": "Document",

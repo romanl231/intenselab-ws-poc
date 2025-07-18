@@ -53,17 +53,17 @@ namespace WS.Handlers
         {
             switch (msg.Event)
             {
-                case MessageEvent.Message:
+                case "send":
                     Console.WriteLine($"[{msg.Sender}]: {msg.Text}");
                     await BroadcastAsync(msg);
                     break;
 
-                case MessageEvent.Join:
+                case "join":
                     Console.WriteLine($"{msg.Sender} joined the chat");
                     await BroadcastAsync(msg);
                     break;
 
-                case MessageEvent.Leave:
+                case "leave":
                     Console.WriteLine($"{msg.Sender} left the chat");
                     await BroadcastAsync(msg);
                     break;
