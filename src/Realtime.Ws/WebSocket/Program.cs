@@ -4,11 +4,17 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using WS.Services;
 using WS.Handlers;
+using StackExchange.Redis;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddSingleton<WebSocketConnectionManager>();
 builder.Services.AddSingleton<ChatWebSocketHandler>();
+builder.Services.AddSingleton<IConnectionMultiplexer>(
+    ConnectionMultiplexer.Connect("localhost:6379,abortConnect=false")
+);
+builder.Services.AddSingleton<RedisSubscriberService>();
+builder.Services.AddHostedService<RedisSubscriberHostedService>();
 
 var app = builder.Build();
 
