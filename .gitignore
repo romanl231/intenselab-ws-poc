@@ -7,6 +7,27 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/Dotnet.gitignore
 
+#Docker
+# Docker
+**/Dockerfile
+**/docker-compose*.yml
+*.tgz
+.docker/
+docker-compose.override.yml
+
+#Test & Coverage
+coverage/
+coverage.cobertura.xml
+*.coverage
+*.coveragejson
+*.testhost.*
+*.trx
+.vstest/
+
+#Logs
+*.log
+*.log.*
+
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
