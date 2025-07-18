@@ -49,7 +49,7 @@ namespace WS.Handlers
             }
         }
 
-        private async Task HandleMessageEventAsync(ChatMessage msg)
+        public async Task HandleMessageEventAsync(ChatMessage msg)
         {
             switch (msg.Event)
             {

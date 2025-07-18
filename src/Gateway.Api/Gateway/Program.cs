@@ -5,8 +5,9 @@ using StackExchange.Redis;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
+var redisUrl = builder.Configuration.GetValue<string>("Redis");
 builder.Services.AddSingleton<IConnectionMultiplexer>(
-    ConnectionMultiplexer.Connect("redis:6379")
+    ConnectionMultiplexer.Connect(redisUrl)
 );
 builder.Services.AddSingleton<RedisPublisherService>();
 
