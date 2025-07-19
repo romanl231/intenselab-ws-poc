@@ -1,0 +1,34 @@
+services:
+  redis:
+    image: redis:7.2
+    container_name: redis
+    ports:
+      - "6379:6379"
+    command: ["redis-server", "--appendonly", "yes"]
+
+  gateway.api:
+    build:
+      context: .
+      dockerfile: src/Gateway.Api/Dockerfile
+    container_name: gateway
+    ports:
+      - "5000:5000"
+    environment:
+      - ASPNETCORE_URLS=http://+:5000
+      - REDIS_HOST=redis
+    depends_on:
+      - redis
+
+  realtime.ws:
+    build:
+      context: .
+      dockerfile: src/Realtime.WS/Dockerfile
+    container_name: websocket
+    ports:
+      - "5001:5001"
+    environment:
+      - REDIS_HOST=redis
+    depends_on:
+      - redis
+
+

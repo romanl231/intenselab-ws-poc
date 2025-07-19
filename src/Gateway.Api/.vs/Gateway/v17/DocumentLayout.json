@@ -1,0 +1,107 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\GitRepos\\intenselab-ws-poc\\src\\Gateway.Api\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EE0EFB9B-CF3C-4243-8333-E899D297D81B}|Gateway.csproj|d:\\gitrepos\\intenselab-ws-poc\\src\\gateway.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EE0EFB9B-CF3C-4243-8333-E899D297D81B}|Gateway.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE0EFB9B-CF3C-4243-8333-E899D297D81B}|Gateway.csproj|d:\\gitrepos\\intenselab-ws-poc\\src\\gateway.api\\controllers\\chatmessagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE0EFB9B-CF3C-4243-8333-E899D297D81B}|Gateway.csproj|solutionrelative:controllers\\chatmessagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE0EFB9B-CF3C-4243-8333-E899D297D81B}|Gateway.csproj|d:\\gitrepos\\intenselab-ws-poc\\src\\gateway.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE0EFB9B-CF3C-4243-8333-E899D297D81B}|Gateway.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE0EFB9B-CF3C-4243-8333-E899D297D81B}|Gateway.csproj|d:\\gitrepos\\intenselab-ws-poc\\src\\gateway.api\\services\\redispublisherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE0EFB9B-CF3C-4243-8333-E899D297D81B}|Gateway.csproj|solutionrelative:services\\redispublisherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE0EFB9B-CF3C-4243-8333-E899D297D81B}|Gateway.csproj|d:\\gitrepos\\intenselab-ws-poc\\src\\gateway.api\\gateway.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{EE0EFB9B-CF3C-4243-8333-E899D297D81B}|Gateway.csproj|solutionrelative:gateway.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ChatMessageController.cs",
+              "DocumentMoniker": "D:\\GitRepos\\intenselab-ws-poc\\src\\Gateway.Api\\Controllers\\ChatMessageController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ChatMessageController.cs",
+              "ToolTip": "D:\\GitRepos\\intenselab-ws-poc\\src\\Gateway.Api\\Controllers\\ChatMessageController.cs",
+              "RelativeToolTip": "Controllers\\ChatMessageController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T14:30:57.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Gateway.csproj",
+              "DocumentMoniker": "D:\\GitRepos\\intenselab-ws-poc\\src\\Gateway.Api\\Gateway.csproj",
+              "RelativeDocumentMoniker": "Gateway.csproj",
+              "ToolTip": "D:\\GitRepos\\intenselab-ws-poc\\src\\Gateway.Api\\Gateway.csproj",
+              "RelativeToolTip": "Gateway.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-18T14:39:17.739Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\GitRepos\\intenselab-ws-poc\\src\\Gateway.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\GitRepos\\intenselab-ws-poc\\src\\Gateway.Api\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-18T14:14:32.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\GitRepos\\intenselab-ws-poc\\src\\Gateway.Api\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\GitRepos\\intenselab-ws-poc\\src\\Gateway.Api\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T14:10:20.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RedisPublisherService.cs",
+              "DocumentMoniker": "D:\\GitRepos\\intenselab-ws-poc\\src\\Gateway.Api\\Services\\RedisPublisherService.cs",
+              "RelativeDocumentMoniker": "Services\\RedisPublisherService.cs",
+              "ToolTip": "D:\\GitRepos\\intenselab-ws-poc\\src\\Gateway.Api\\Services\\RedisPublisherService.cs",
+              "RelativeToolTip": "Services\\RedisPublisherService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T21:53:38.253Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

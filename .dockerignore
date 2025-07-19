@@ -1,0 +1,10 @@
+bin/
+obj/
+*.md
+*.user
+*.suo
+.vscode/
+.idea/
+*.git
+.gitignore
+docker-compose.yml
